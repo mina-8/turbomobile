@@ -24,12 +24,52 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="assigments"
         options={{
-          title: 'Explore',
+          title: 'assigments',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+            <TabBarIcon name={focused ? 'book' : 'book-outline'} color={color} />
           ),
+        }}
+      />
+      <Tabs.Screen
+        name="SettingsScreen"
+        options={{
+          title: 'SettingsScreen',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'options' : 'options-outline'} color={color} />
+          ),
+        }}
+      />
+      
+      <Tabs.Screen
+        name="lessons"
+        options={{
+          tabBarButton: ()=>null
+        }}
+      />
+      <Tabs.Screen
+        name="ShowLesson"
+        options={{
+          tabBarButton: ()=>null
+        }}
+      />
+      <Tabs.Screen
+        name="CheckView"
+        options={{
+          tabBarButton: ()=>null
+        }}
+      />
+      <Tabs.Screen
+        name="Videos"
+        options={{
+          tabBarButton: ()=>null
+        }}
+      />
+      <Tabs.Screen
+        name="showassigment"
+        options={{
+          tabBarButton: ()=>null
         }}
       />
     </Tabs>
